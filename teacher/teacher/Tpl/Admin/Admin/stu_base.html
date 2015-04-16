@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<title>后台管理</title>
+		<meta charset="utf-8">
+
+		<!--基本样式与js文件的导入-->
+		<link href="__PUBLIC__/ts_admin/css/bootstrap.css" rel="stylesheet"/>
+		<script type="text/javascript" src="__PUBLIC__/ts_admin/js/jquery-1.10.2.js"></script>
+		<script type="text/javascript" src="__PUBLIC__/ts_admin/js/bootstrap.min.js"></script>
+
+		<block name="inline"></block>
+	</head>
+	<body>
+		<div class="navbar">
+			<div class="navbar-inner">
+				<div class="container">
+					<a class="brand" href="#">后台管理</a>
+					<ul class="nav">
+						<li><a href="{:U(teacher)}">教师管理</a></li>
+						<li><a href="{:U(student)}">学生管理</a></li>
+						<li><a href="{:U(ts_admin)}">导师选择系统</a></li>
+					</ul>
+					<ul class="nav pull-right">
+						<li><a href="#">当前登录: {$admin}</a></li>
+						<li><a href="{:U(logout)}">退出</a></li>
+						<li class="divider-vertical"></li>
+						<li class="divider-vertical"></li>
+						<li><a href="{:C(home_page)}">回到主页</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<block name="content"></block>
+		<block name="footer"></block>
+	</body>
+</html>

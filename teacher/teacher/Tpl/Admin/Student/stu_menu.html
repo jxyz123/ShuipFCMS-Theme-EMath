@@ -1,0 +1,20 @@
+		<div class="navbar">
+			<div class="navbar-inner">
+				<div class="container">
+					<a class="brand" href="#">个人信息管理</a>
+					<ul class="nav" id="menu">
+						<li id="menu_1"><a href="{:U(index)}">预览</a></li>
+						<li id="menu_2"><a href="{:U(edit)}">编辑</a></li>
+						<li id="menu_3"><a href="{:U(admin_teacher)}">导师选择系统</a></li>
+						<li id="menu_4"><a href="{:U(change_password)}">修改密码</a></li>
+					</ul>
+					<ul class="nav pull-right">
+						<li><a href="#">当前登录：{$user.id}</a></li>
+						<li><a href="{:U(logout)}">退出</a></li>
+						<li class="divider-vertical"></li>
+						<li class="divider-vertical"></li>
+						<li><a href="{:C(home_page)}">学院主页</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>

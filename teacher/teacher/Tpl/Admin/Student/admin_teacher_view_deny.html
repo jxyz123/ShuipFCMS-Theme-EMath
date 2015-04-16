@@ -1,0 +1,44 @@
+<extend name="stu_base"/>
+	<block name="inline">
+		<style>
+			#image{
+				height: 180px;
+				width: 135px;
+			}
+
+			#image_td{
+				text-align: center;
+			}
+		</style>
+	</block>
+
+	<block name="menu">
+		<div class="navbar">
+			<div class="navbar-inner">
+				<div class="container">
+					<a class="brand" href="#">用户信息预览</a>
+					<ul class="nav">
+						<li><a href="#">当前用户：{$user.id}</a></li>
+					</ul>
+
+					<ul class="nav pull-right">
+						<li><a href="{:C(home_page)}">学院主页</a></li>
+					</ul>
+
+				</div>
+			</div>
+		</div>
+	</block>
+
+	<block name="content">
+		<div class="row-fluid">
+			 <div class='span1'>&nbsp</div>
+				<div class='span9'>
+					<div class='alert'>
+					<a class='close' data-dismiss='alert'>×</a>
+					<strong>该用户信息正在审核中</strong>
+				</div>
+			</div>
+		</div>
+	</block>
+

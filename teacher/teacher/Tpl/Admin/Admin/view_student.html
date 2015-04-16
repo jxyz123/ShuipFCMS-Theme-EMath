@@ -1,0 +1,59 @@
+<extend name="base" />
+	<block name="content">
+		<div class="navbar">
+			<div class="navbar-inner">
+				<div class="container">
+					<a class="brand" href="#">用户信息预览</a>
+					<ul class="nav">
+						<li><a href="#">当前用户：{$user.id}</a></li>
+					</ul>
+
+					<ul class="nav pull-right">
+						<li><a href="{:C(home_page)}">学院主页</a></li>
+					</ul>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="row-fluid">
+			<div class="span1">
+				&nbsp
+			</div>
+
+			<div class="span9">
+				<table class="table">
+					<tr>
+						<td class="span4">
+							<br>
+							<p><strong>ID：</strong> <span class="s_right">{$user.id}</span></p>
+							<p><strong>姓名：</strong> <span class="s_right">{$user.name}</span></p>
+							<p><strong>性别：</strong> <span class="s_right">{$user.sex}</span></p>
+							<p><strong>出生日期：</strong><span class="s_right">{$user.brithday}</span></p>
+						</td>
+
+						<td class="span3">
+							<br>
+							<p><strong>专业：</strong> <span class="s_right">{$user.field}</span></p>
+							<p><strong>电话：</strong> <span class="s_right">{$user.tel}</span></p>
+							<p><strong>邮箱：</strong> <span class="s_right">{$user.email}</span></p>
+						</td>
+
+						<td class="span3">
+							&nbsp
+						</td>
+					</tr>
+				</table><hr>
+
+				<div>
+					<h3>自我介绍：</h3>
+					<pre>{$user.introduce}</pre>
+				</div><hr>
+
+				<div>
+					<h3>所获奖项：</h3>
+					<pre>{$user.advantage}</pre>
+				</div><hr>
+			</div>
+		</div>
+	</block>

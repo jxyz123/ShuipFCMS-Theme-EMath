@@ -1,0 +1,20 @@
+<div class="navbar">
+	<div class="navbar-inner">
+		<div class="container">
+			<a class="brand" href="#">后台管理</a>
+			<ul class="nav">
+				<li id="menu_1"><a href="{:U(teacher)}">教师管理</a></li>
+				<li id="menu_2"><a href="{:U(student)}">学生管理</a></li>
+				<li id="menu_3"><a href="{:U(ts_admin)}">导师选择系统</a></li>
+				<li id="menu_4"><a href="{:U(change_password)}">修改密码</a></li>
+			</ul>
+			<ul class="nav pull-right">
+				<li><a href="#">当前登录: {$admin_id}</a></li>
+				<li><a href="{:U(logout)}">退出</a></li>
+				<li class="divider-vertical"></li>
+				<li class="divider-vertical"></li>
+				<li><a href="{:C(home_page)}">回到主页</a></li>
+			</ul>
+		</div>
+	</div>
+</div>

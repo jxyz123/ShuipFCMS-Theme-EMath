@@ -1,0 +1,73 @@
+<extend name="stu_base"/>
+	<block name="inline">
+		<script type="text/javascript" src="__PUBLIC__/ts_admin/js/student_admin_teacher.js"></script>
+		<script>
+			var current_page = "{:U()}";
+			var admin_teacher_view_url = "{:U(admin_teacher_view)}";
+			var admin_teacher_choose_url = "{:U(admin_teacher_choose)}";
+			var user_id = "{$user.id}";
+		</script>
+	</block>
+	<block name="menu"><include file="stu_menu"/></block>
+
+	<block name="content">
+		<div class="row-fluid">
+			<div class="span1">
+				&nbsp
+			</div>
+
+			<div class="span10">
+				<hr>
+				<div class="row-fluid">
+					<div class="span9">
+						<div class="row-fluid">
+							<span class="span3">学生报名未开始</span>
+							<span class="span3">学生报名开始</span>
+							<span class="span3">导师选择学生</span>
+							<span class="span3">录取结果发布</span>
+						</div>
+						<div class="row-fluid">
+							<div class="span11">
+								<div class="progress">
+									<div class="bar" style="width: {$statue_w}%"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="span3">
+						<br>
+						<h4>当前状态：{$statue_h}</h4>
+					</div>
+				</div>
+				<hr>
+
+				<h3>教师列表（请选择导师）,当前选中的导师为：{$user.teacher_id}&nbsp&nbsp{$user.teacher_name}</h3>
+				<hr>
+				<table class="table">
+					<thead>
+						<tr>
+							<th class="span3">Id</th>
+							<th class="span3">姓名</th>
+							<th class="span3">当前报名人数/录取名额数</th>
+							<th class="span3">常用操作</th>
+						</tr>
+					</thead>
+					<tbody>
+						<foreach name="teachers" key="key" item="teacher">
+							<tr>
+								<td>{$teacher.id}</td>
+								<td>{$teacher.name}</td>
+								<td>{$teacher.cur}/{$teacher.allow}</td>
+								<td>
+									<button class="btn btn-primary choose" uid="{$teacher.id}">选中</button>
+									<button class="btn detail" uid="{$teacher.id}">详细</button>
+								</td>
+							</tr>
+						</foreach>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+	</block>
