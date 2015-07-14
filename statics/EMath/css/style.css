@@ -735,7 +735,7 @@ a:focus{
 }
 .menu-stacked { text-align: center; }
     .menu-stacked ul { font-family: "Microsoft YaHei", SimSun, SimHei;background-color: #fff;}
-        .menu-stacked ul li a { border: 1px solid #ddd; font: bold 14px; line-height: 30px; display: block; background:url(../images/arrow_right_black.png) no-repeat right;}
+        .menu-stacked ul li a { border: 1px solid #ddd; font: bold 14px; line-height: 30px; display: block; }
             .menu-stacked ul li a i { padding: 0 5px; }
             .menu-stacked ul li a:hover, .menu-stacked ul li.active a { background: #03AE87; color: #FFF; }
 /*----------------------------------------pagination.css----------------------------------------*/
