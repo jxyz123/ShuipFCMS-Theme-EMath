@@ -92,7 +92,7 @@ var ind = 0;
     </div>
     <div class="news1-box-bottom">
         <ul>
-            <content action="lists" catid="9"  order="updatetime DESC" num="4">
+            <content action="lists" catid="9"  order="listorder DESC,updatetime DESC" num="4">
             <volist name="data" id="vo">
             <li><a href="{$vo.url}"  title="{$vo.title}"><span class="pull-right"> {$vo.updatetime|date="m-d",###}</span>{$vo.title|str_cut=###,28}</a></li>
             </volist>
@@ -108,7 +108,7 @@ var ind = 0;
     </div>
     <div class="news1-box-bottom">
         <ul>
-            <content action="lists" catid="10"  order="updatetime DESC" num="4">
+            <content action="lists" catid="10"  order="listorder DESC,updatetime DESC" num="4">
             <volist name="data" id="vo">
             <li><a href="{$vo.url}"  title="{$vo.title}"><span class="pull-right"> {$vo.updatetime|date="m-d",###}</span>{$vo.title|str_cut=###,28}</a></li>
             </volist>
@@ -128,7 +128,7 @@ var ind = 0;
     </div>
     <div class="news1-box2-bottom">
         <ul>
-            <content action="lists" catid="16"  order="updatetime DESC" num="6">
+            <content action="lists" catid="16"  order="listorder DESC,updatetime DESC" num="6">
             <volist name="data" id="vo">
             <li><a href="{$vo.url}"  title="{$vo.title}"><span class="pull-right"> {$vo.updatetime|date="m-d",###}</span>{$vo.title|str_cut=###,18}</a></li>
             </volist>
@@ -144,7 +144,7 @@ var ind = 0;
     </div>
     <div class="news1-box2-bottom">
         <ul>
-            <content action="lists" catid="15"  order="updatetime DESC" num="6">
+            <content action="lists" catid="15"  order="listorder DESC,updatetime DESC" num="6">
             <volist name="data" id="vo">
             <li><a href="{$vo.url}"  title="{$vo.title}"><span class="pull-right"> {$vo.updatetime|date="m-d",###}</span>{$vo.title|str_cut=###,19}</a></li>
             </volist>
