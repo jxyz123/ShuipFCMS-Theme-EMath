@@ -27,7 +27,7 @@ $(function(){
         block.stop().animate({
             "left": init.position().left - 3
         },
-        100);
+        500);
     });
     $(".nav-nav").slide({
         type: "menu",
@@ -41,7 +41,7 @@ $(function(){
             block.stop().animate({
                 "left": tit.eq(i).position().left - 3
             },
-            100);
+            500);
         }
     });
 });
@@ -72,7 +72,7 @@ var ind = <if condition="$catid lt 8">{$catid}<else />{:getCategory($catid,'pare
     <!--左侧导航-->
     <div class="menu menu-stacked mg-b-10">
         <ul>
-            <li class="active"><a href="{:titleurl($catid,$id)}">{:getCategory($catid,'catname')}</a></li>
+            <li class="active"><a>{:getCategory($catid,'catname')}</a></li>
             <content action="category" catid="$catid"  order="listorder ASC" >
             <volist name="data" id="vo">
             <li><a href="{$vo.url}">{$vo.catname}</a></li>

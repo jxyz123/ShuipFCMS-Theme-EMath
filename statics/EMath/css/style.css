@@ -204,10 +204,10 @@ a:focus{
 }
 .nav-nav .nav-block {
 	height: 3px;
-	width: 120px;
+	width: 80px;
 	background: #FE7700;
 	position: absolute;
-	left: 0;
+	margin-left: 24px;
 	top: 29px;
 	overflow: hidden;
 }

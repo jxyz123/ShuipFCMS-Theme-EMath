@@ -27,7 +27,7 @@
 					block.stop().animate({
 						"left": init.position().left - 3
 					},
-					100);
+					500);
 				});
 			$(".nav-nav").slide({
 				type: "menu",
@@ -41,7 +41,7 @@
 					block.stop().animate({
 						"left": tit.eq(i).position().left - 3
 					},
-					100);
+					500);
 				}
 			});
 		});
@@ -74,14 +74,14 @@
 					<div class="menu menu-stacked mg-b-10">
 						<ul>
 							<if condition="($catid neq 9) AND ($catid neq 10)">
-								<li class="active"><a href="{:getCategory(getCategory($catid,'parentid'),'url')}">{:getCategory(getCategory($catid,'parentid'),'catname')}</a></li>
+								<li class="active"><a>{:getCategory(getCategory($catid,'parentid'),'catname')}</a></li>
 								<content action="category" catid="$parentid"  order="listorder ASC" >
 									<volist name="data" id="vo">
 										<li><a href="{$vo.url}">{$vo.catname}</a></li>
 									</volist>
 								</content>
 								<else />
-								<li class="active"><a href="{:getCategory($catid,'url')}">{:getCategory($catid,'catname')}</a></li>
+								<li class="active"><a>{:getCategory($catid,'catname')}</a></li>
 							</if>
 						</ul>
 					</div>

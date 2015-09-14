@@ -29,7 +29,7 @@ $(function(){
         block.stop().animate({
             "left": init.position().left - 3
         },
-        100);
+        500);
     });
     $(".nav-nav").slide({
         type: "menu",
@@ -43,7 +43,7 @@ $(function(){
             block.stop().animate({
                 "left": tit.eq(i).position().left - 3
             },
-            100);
+            500);
         }
     });
 });
