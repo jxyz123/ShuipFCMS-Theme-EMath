@@ -19,6 +19,7 @@ $(document).ready(function(){
 			var val_brithday = $("#brithday").val();
 			var val_tel = $("#tel").val();
 			var val_email = $("#email").val();
+			var val_photo = $("#photo").val();
 			var val_home_page = $("#home_page").val();
 			var val_bas = $("#bas").val();
 			var val_edu = $("#edu").val();
@@ -33,6 +34,7 @@ $(document).ready(function(){
 				brithday: 	val_brithday,
 				tel: 		val_tel,
 				email: 		val_email,
+				photo:                val_photo,
 				home_page: 	val_home_page,
 				bas: 		val_bas,
 				edu: 		val_edu,

@@ -72,6 +72,15 @@ $(function(){
 		if(data.state != 'fail'){
 			return false;
 		}
+    if(data.latestversion.status){
+      art.dialog({
+        title:'升级提示',
+         icon: 'warning',
+        content: '系统检测到新版本发布，请尽快更新到 '+data.latestversion.version.version + '，以确保网站安全！',
+        cancelVal: '关闭',
+        cancel: true
+      });
+    }
 		if(data.license.authorize){
 			$('#server_license').html(data.license.name);
 		}else{
@@ -82,7 +91,7 @@ $(function(){
 
 		if(data.notice.id > 0){
 			art.dialog.notice({
-				title: data.title,
+				title: data.notice.title,
 				width: 400,// 必须指定一个像素宽度值或者百分比，否则浏览器窗口改变可能导致artDialog收缩
 				content: data.notice.content,
 				close:function(){
