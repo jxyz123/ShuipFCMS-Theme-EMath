@@ -2,7 +2,7 @@
 <!--links-->
 <div class="link-box pull-left">
     <div class="link-img mg-b-10">
-        <a href="http://maths.hust.edu.cn/index.php?a=shows&catid=10&id=1018"><img src="{$config_siteurl}statics/EMath/images/link_recruitment_talents.jpg"></a>
+        <a href="http://maths.hust.edu.cn/index.php?a=lists&catid=74"><img src="{$config_siteurl}statics/EMath/images/link_recruitment_talents.jpg"></a>
     </div>
     <div class="link-img mg-b-10">
         <a href="http://maths.hust.edu.cn/mate/index_cn.php"><img src="{$config_siteurl}statics/EMath/images/link_schoolfellow.jpg"></a>

@@ -55,7 +55,7 @@
 	<div class="bgc1">
 		<div class="bgc2">
 			<!--map and search-->
-			<div class="map mb-b-10"><span class="home-ico">当前位置：<a href="{$config_siteurl}">{$Config.sitename}</a><if condition="($catid neq 9) AND ($catid neq 10)"> &gt; <navigate catid="$catid" space=" &gt; " /></if></span>
+			<div class="map mb-b-10"><span class="home-ico">当前位置：<a href="{$config_siteurl}">{$Config.sitename}</a><if condition="($catid neq 9) AND ($catid neq 10) AND ($catid neq 74)"> &gt; <navigate catid="$catid" space=" &gt; " /></if></span>
 				<p style="float:right;padding-right:15px;"></p>
 				<form  name="formsearch" class="form" action="{:U('Search/Index/index')}" method="post">
 					<input type="text" name="q" size="24" class="search-keyword"  id="inputString" class="f-text" x-webkit-speech /><input type="submit" class="search-submit"  id="search-submit" value="搜 索" />
@@ -73,7 +73,7 @@
 					<!--左侧导航-->
 					<div class="menu menu-stacked mg-b-10">
 						<ul>
-							<if condition="($catid neq 9) AND ($catid neq 10)">
+							<if condition="($catid neq 9) AND ($catid neq 10) AND ($catid neq 74)">
 								<li class="active"><a>{:getCategory(getCategory($catid,'parentid'),'catname')}</a></li>
 								<content action="category" catid="$parentid"  order="listorder ASC" >
 									<volist name="data" id="vo">
