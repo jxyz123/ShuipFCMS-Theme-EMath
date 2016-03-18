@@ -100,7 +100,7 @@ var ind = <if condition="$catid lt 8">{$catid}<elseif condition="$parentid lt 8"
 			<div class="article_article_left pull-left">
 			<div class="article_con">
 				<h1 title="{$title}">{$title}</h1>
-				<p class="info">发布时间:{$updatetime}&nbsp;&nbsp;&nbsp;   您是第<span id="hits">0</span>位浏览者 </p>
+				<p class="info">{$updatetime}&nbsp;&nbsp;&nbsp;   浏览次数:<span id="hits">0</span> </p>
 				<div class="tool_con">
 					<div id="put_layer2" class="tools" style="display:block;">
 						<script src="{$config_siteurl}statics/EMath/js/tools.js" language="javascript" type="text/javascript"></script>
