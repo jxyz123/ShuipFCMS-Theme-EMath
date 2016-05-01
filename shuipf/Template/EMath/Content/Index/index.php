@@ -94,7 +94,7 @@ var ind = 0;
         <ul>
             <content action="lists" catid="9"  order="listorder DESC,updatetime DESC" num="4">
             <volist name="data" id="vo">
-            <li><a href="{$vo.url}"  title="{$vo.title}"><span class="pull-right"> {$vo.updatetime|date="m-d",###}</span>{$vo.title|str_cut=###,28}</a></li>
+            <li><a href="{$vo.url}"  title="{$vo.title}"><span class="pull-right"> {$vo.updatetime|date="m-d",###}</span>{$vo.title|str_cut=###,30}</a></li>
             </volist>
             </content>
          </ul>
@@ -110,7 +110,7 @@ var ind = 0;
         <ul>
             <content action="lists" catid="10"  order="listorder DESC,updatetime DESC" num="4">
             <volist name="data" id="vo">
-            <li><a href="{$vo.url}"  title="{$vo.title}"><span class="pull-right"> {$vo.updatetime|date="m-d",###}</span>{$vo.title|str_cut=###,28}</a></li>
+            <li><a href="{$vo.url}"  title="{$vo.title}"><span class="pull-right"> {$vo.updatetime|date="m-d",###}</span>{$vo.title|str_cut=###,30}</a></li>
             </volist>
             </content>
         </ul>
@@ -138,13 +138,13 @@ var ind = 0;
     </div>
     <!--学术活动 end-->
     <div class="news1 mg-r-10 pull-left">
-    <div class="news1-ribben"><img src="{$config_siteurl}statics/EMath/images/ribben_research.png"></div>
+    <div class="news1-ribben"><img src="{$config_siteurl}statics/EMath/images/ribben_cpcnews.png"></div>
     <div class="news1-box2-top">
-        <h2><span class="more pull-right"><a href="{:getCategory(15,'url')}">更多 >></a></span><span class="h2_txt">科研动态</span></h2>
+        <h2><span class="more pull-right"><a href="{:getCategory(77,'url')}">更多 >></a></span><span class="h2_txt">党建动态</span></h2>
     </div>
     <div class="news1-box2-bottom">
         <ul>
-            <content action="lists" catid="15"  order="listorder DESC,updatetime DESC" num="6">
+            <content action="lists" catid="77"  order="listorder DESC,updatetime DESC" num="6">
             <volist name="data" id="vo">
             <li><a href="{$vo.url}"  title="{$vo.title}"><span class="pull-right"> {$vo.updatetime|date="m-d",###}</span>{$vo.title|str_cut=###,19}</a></li>
             </volist>
@@ -152,7 +152,7 @@ var ind = 0;
         </ul>
     </div>
     </div>
-    <!--科研动态 end-->
+    <!--党建动态 end-->
 <template file="Content/links.php"/>
 </div>
 <!--bottom part end-->

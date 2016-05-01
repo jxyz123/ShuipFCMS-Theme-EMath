@@ -54,7 +54,7 @@ var GV = {
 		});
 	});
 	<?php $parentid = getCategory($catid,'parentid'); ?>
-	var ind = <if condition="$catid lt 8">{$catid}<elseif condition="$parentid lt 8"/>{$parentid}<else />{:getCategory($parentid,'parentid')}</if>;
+	var ind = <if condition="$catid eq 7">8</if>;
 </script>
 </head>
 

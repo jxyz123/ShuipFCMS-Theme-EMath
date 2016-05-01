@@ -45,7 +45,7 @@ $(function(){
         }
     });
 });
-var ind = <if condition="($catid lt 5)">{$catid}<elseif condition="$catid eq 75"/>5<elseif condition="$catid eq 76"/>6<elseif condition="$catid eq 6"/>7<elseif condition="$catid eq 7"/>8<else />{:getCategory($catid,'parentid')}</if>;
+var ind = 7;
 </script>
 </head>
 

@@ -169,7 +169,7 @@ a:focus{
 }
 .nav-nav h3 a {
 	display: block;
-	width: 121px;
+	width: 107px;
 	text-align: center;
 	font-weight: bold;
 }
@@ -207,7 +207,7 @@ a:focus{
 	width: 80px;
 	background: #FE7700;
 	position: absolute;
-	margin-left: 24px;
+	margin-left: 16px;
 	top: 29px;
 	overflow: hidden;
 }
